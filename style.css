@@ -1,0 +1,289 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+
+
+
+
+/* Navbar */
+* {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    border-bottom: 1px solid #bebebe;
+    background-color: #202124;
+    /* backdrop-filter: brightness(0.2); */
+    position: fixed;
+    inset: 0;
+    height: 50px;
+    z-index: 500;
+}
+
+#branding {
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    color: #c1c1c1;
+}
+
+.hemburger_icon__container>img {
+    height: 35px;
+}
+
+.nav_links__container {
+    display: none;
+}
+
+.nav_links__container>ul>li>a {
+    color: #c1c1c1;
+    font-family: 'Mukta Malar', sans-serif;
+}
+
+.intro__container {
+    width: 100%;
+    margin-top: 80px;
+    padding: 0 5%;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#salutation {
+    font-size: 20px;
+    padding-bottom: 5px;
+    font-family: 'Mukta Malar', sans-serif;
+    font-weight: lighter;
+}
+
+#name {
+    font-size: 60px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.what_I_am {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.what_I_am>li {
+    padding-bottom: 10px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+#image__container>img {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 85px 85px 10px 120px;
+}
+.social_media__links{
+    margin-top: 20px;
+    padding-left: 5%;
+}
+.social_media__links>ul>li>a>img {
+    height: 25px;
+    padding-right: 10px;
+}
+.social_media__links>ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+@media only screen and (min-width : 768px) {
+    .hemburger_icon__container {
+        display: none;
+    }
+
+    .mobile_nav_links__container {
+        display: none;
+    }
+
+    .nav_links__container {
+        display: block;
+        flex-grow: 1;
+    }
+
+    .nav_links__container>ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #branding {
+        flex-grow: 1;
+    }
+
+    .intro__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #image__container{
+        width: 50%;
+    }
+    #image__container>img {
+        width: 75%;
+        float: right;
+    }
+    #salutation {
+        font-size: 30px;
+        padding-bottom: 5px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    #name {
+        font-size: 90px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .what_I_am {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+    .social_media__links>ul>li>a>img {
+        height: 30px;
+        padding-right: 30px;
+    }
+}
+
+
+/* MOBILE VIEW */
+.mobile_nav_links__container {
+    background-color: #4e4e4e;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    inset: 0;
+    padding-top: 50px;
+    padding-left: 5%;
+    transform: translateX(-100%);
+    transition: all 300ms ease-in-out;
+    /* z-index: 450; */
+}
+
+.mobile_nav_links__container>ul>li {
+    padding: 15px 0px;
+    font-family: 'Lora', serif;
+}
+
+.mobile_nav_links__container>ul>li>a {
+    color: #c1c1c1;
+}
+
+.displayMenu {
+    transform: translateX(0);
+}
